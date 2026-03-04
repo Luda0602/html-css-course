@@ -20,6 +20,12 @@ body {
 a {
     text-decoration: none;
 }
+h1 {
+    margin: 0;
+}
+section {
+    padding: 80px 0;
+}
 
 * {
     box-sizing: border-box;
@@ -35,6 +41,9 @@ a {
     .container {
         padding: 0 40px;
     }
+    section {
+    padding: 64px 0;
+}
 }
 
 /* Телефон */
@@ -42,6 +51,9 @@ a {
     .container {
         padding: 0 16px;
     }
+    section {
+    padding: 50px 0;
+}
 }
 
 /* Header */
@@ -105,4 +117,69 @@ background-color: var(--color-secondary);
     color: var(--color-white);
     padding: 8px 45px;
     border-radius: 4px;
+}
+
+/* Main */
+.main {
+}
+
+.main-wrap {
+    display: grid;
+    grid-template-columns: 1fr 450px;
+    gap: 85px;
+}
+ .main-wrap .content {
+}
+.main-wrap .content h1 {
+font-family: var(--font-title);
+font-style: normal;
+font-weight: 700;
+font-size: 61px;
+line-height: 113.3%;
+letter-spacing: -0.04em;
+color: var(--color-black);
+}
+.main-wrap .content h1 span {
+font-family: var(--font-accent);
+font-style: normal;
+font-weight: 400;
+font-size: 61px;
+line-height: 113.3%;
+letter-spacing: -0.04em;
+color: var(--color-primary);
+}
+.main-wrap .content .description {
+font-family: var(--font-body);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+color: var(--color-light-black);
+margin: 24px 0;
+}
+.main-wrap .content .play {
+margin-bottom: 24px;
+}
+.main-wrap .content ul {
+
+}
+.main-wrap .content ul li {
+    
+}
+.main-wrap .content ul li a {
+
+}
+.main-wrap .content .play img {
+    
+}
+ .main-wrap .image {
+    border-radius: 32px;
+    overflow: hidden;
+    height: fit-content;
+}
+.main-wrap .image img {
+display: block;
+width: 100%;
+height: auto;
+object-fit: cover;
 }
